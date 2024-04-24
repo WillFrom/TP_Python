@@ -138,3 +138,35 @@ match jour_semaine:
 
 #Question 4
 
+#Exercice3 
+#Question 1
+
+nombres = [1, 2, 3, 5, 8]
+
+tables_de_multiplication = {}
+
+# Boucle pour chaque nombre dans la liste
+for nombre in nombres:
+    # Créer une liste pour stocker les résultats de la table de multiplication pour ce nombre
+    table = []
+    for i in range(1, 11):  # Générer les produits de 1 à 10
+        table.append(nombre * i)
+    # Ajouter la table au dictionnaire avec le nombre comme clé
+    tables_de_multiplication[nombre] = table
+
+# Afficher les tables de multiplication
+for nombre, table in tables_de_multiplication.items():
+    print(f"Table de {nombre}: {table}")
+
+#Question 2
+resultats_table_de_5 = []
+
+for i in range(1, 11):  # de 1 à 10
+    # Formatage du résultat comme une chaîne de caractères et l'ajouter à la liste
+    resultats_table_de_5.append(f"5 x {i} = {5 * i}")
+
+for resultat in resultats_table_de_5:
+    print(resultat)
+
+#Question 3
+
