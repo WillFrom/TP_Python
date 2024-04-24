@@ -149,7 +149,7 @@ tables_de_multiplication = {}
 for nombre in nombres:
     # Créer une liste pour stocker les résultats de la table de multiplication pour ce nombre
     table = []
-    for i in range(1, 11):  # Générer les produits de 1 à 10
+    for i in range(1, 11):  # de 1 à 10
         table.append(nombre * i)
     # Ajouter la table au dictionnaire avec le nombre comme clé
     tables_de_multiplication[nombre] = table
@@ -169,4 +169,22 @@ for resultat in resultats_table_de_5:
     print(resultat)
 
 #Question 3
+resultats_table_de_5 = []
 
+i = 1
+
+# Utilisation d'une boucle while avec True comme condition
+while True:
+    # Ajouter le résultat formaté à la liste
+    resultats_table_de_5.append(f"5 x {i} = {5 * i}")
+    
+    # Incrémenter le compteur
+    i += 1
+    
+    # Vérifier si le compteur dépasse 10, et si c'est le cas, sortir de la boucle
+    if i > 10:
+        break
+
+# Afficher les résultats
+for resultat in resultats_table_de_5:
+    print(resultat)
