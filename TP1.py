@@ -104,16 +104,16 @@ else:
     print("Félicitations, vous devenez le patron de la boîte de nuit !")
 
 #Question 2
-rand = random.randint(0, 30)
 
-response_dict = {
-    range(0, 11): "Cool",
-    range(11, 21): "Tepid",
-    range(21, 31): "Warm"
-}
+temp=random.randint(0, 30)
+print(temp)
 
-response = [response_dict[range_key] for range_key in response_dict if rand in range_key][0]
-print(response)
+if 0<temp<=10:
+    print("Cool")
+elif 11<=temp<=20:
+    print("Tepid")
+elif 21 <=temp<= 30 :
+    print("Warm")
 
 #Question 3
 import datetime
